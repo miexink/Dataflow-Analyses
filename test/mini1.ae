@@ -1,0 +1,6 @@
+IN sets (Available Expressions)
+  entry: {add(a,b), mul(c,d)}
+
+OUT sets (Available Expressions)
+  entry: {add(a,b), mul(c,d)}
+

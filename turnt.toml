@@ -1,0 +1,13 @@
+# turnt.toml — run both analyses on each .bril file
+
+[envs.rd]
+# Run Reaching Definitions
+command = "python3 rd.py {filename}"
+# Save stdout into <test-name>.rd so RD and AE don’t conflict
+output.rd = "-"
+
+[envs.ae]
+# Run Available Expressions
+command = "python3 ae.py {filename}"
+# Save stdout into <test-name>.ae
+output.ae = "-"

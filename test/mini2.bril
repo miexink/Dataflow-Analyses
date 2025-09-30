@@ -1,0 +1,17 @@
+@main {
+  a: int = const 1;
+  b: int = const 2;
+  br LT a b .L1 .L2;
+
+.L1:
+  c: int = add a b;
+  jmp .L3;
+
+.L2:
+  a: int = add a b;
+  c: int = add a b;
+
+.L3:
+  d: int = add a b;
+  ret;
+}
